@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../css/chart.css">
+    <title>Young Macro Finder</title>
+</head>
+<body id="body-pd" class="body-pd">
+    <div class="l-navbar expander" id="navbar">
+        <nav class="nav">
+            <div>
+                <div class="nav__brand">
+
+                    <a href="../index.html" class="nav__logo">Uncertainty</a>
+                </div>
+                <div class="nav__list">
+                    <a href="../index.html" class="nav__link active">
+                        <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+                        <span class="nav_name">Dashboard</span>
+                    </a>
+                    <div href="#" class="nav__link collapse">
+                        <ion-icon name="folder-outline" class="nav__icon"></ion-icon>
+                        <span class="nav_name">STOCK</span>
+
+                        <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+
+                        <ul class="collapse__menu">
+                            <a href="../stock/us.html" class="collapse__sublink">US</a>
+                            <a href="../stock/korea.html" class="collapse__sublink">KOREA</a>
+                            <a href="../stock/europe.html" class="collapse__sublink">EUROPE</a>
+                            <a href="../stock/japan.html" class="collapse__sublink">JAPAN</a>
+                            <a href="../stock/brazil.html" class="collapse__sublink">BRAZIL</a>
+                            <a href="../stock/vix.html" class="collapse__sublink">VIX</a>
+                        </ul>
+                    </div>
+
+                    <div href="#" class="nav__link collapse">
+                        <ion-icon name="folder-outline" class="nav__icon"></ion-icon>
+                        <span class="nav_name">BOND</span>
+
+                        <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+
+                        <ul class="collapse__menu">
+                            <a href="../bond/us.html" class="collapse__sublink">US</a>
+                        </ul>
+                    </div>
+
+                    <div href="#" class="nav__link collapse">
+                        <ion-icon name="folder-outline" class="nav__icon"></ion-icon>
+                        <span class="nav_name">FX</span>
+
+                        <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+
+                        <ul class="collapse__menu">
+                            <a href="../fx/dxy.html" class="collapse__sublink">DXY</a>
+                            <a href="../fx/krw.html" class="collapse__sublink">USD/KRW</a>
+                            <a href="../fx/jpy.html" class="collapse__sublink">USD/JPY</a>
+                            <a href="../fx/cny.html" class="collapse__sublink">USD/CNY</a>
+                            <a href="../fx/eurusd.html" class="collapse__sublink">EUR/USD</a>
+                            <a href="../fx/eurjpy.html" class="collapse__sublink">EUR/JPY</a>
+                        </ul>
+                    </div>
+
+                    <div href="#" class="nav__link collapse">
+                        <ion-icon name="folder-outline" class="nav__icon"></ion-icon>
+                        <span class="nav_name">COMMODITY</span>
+
+                        <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+
+                        <ul class="collapse__menu">
+                            <a href="../commodity/wti.html" class="collapse__sublink">Crude Oil WTI</a>
+                            <a href="../commodity/brent.html" class="collapse__sublink">Brent Oil</a>
+                            <a href="../commodity/ng.html" class="collapse__sublink">Natural Gas</a>
+                            <a href="../commodity/gold.html" class="collapse__sublink">XAU/USD</a>
+                            <a href="../commodity/silver.html" class="collapse__sublink">XAG/USD</a>
+                            <a href="../commodity/copper.html" class="collapse__sublink">Copper</a>
+                            <a href="../commodity/paladium.html" class="collapse__sublink">Paladium</a>
+                            <a href="../commodity/aluminium.html" class="collapse__sublink">Aluminium</a>
+                            <a href="../commodity/nikkel.html" class="collapse__sublink">Nikkel</a>
+                            <a href="../commodity/corn.html" class="collapse__sublink">US Corn</a>
+                            <a href="../commodity/wheat.html" class="collapse__sublink">US Wheat</a>
+
+                        </ul>
+                    </div>
+
+                    <div href="#" class="nav__link collapse">
+                        <ion-icon name="folder-outline" class="nav__icon"></ion-icon>
+                        <span class="nav_name">운임</span>
+
+                        <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+
+                        <ul class="collapse__menu">
+                            <a href="../pair/bwet.html" class="collapse__sublink">Bwet(Tanker)</a>
+                            <a href="../pair/bdry.html" class="collapse__sublink">Bdry(Bulk)</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <h1>USD/CNY</h1>
+    <div class="chart">
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container" style="height:100%;width:100%">
+        <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+        <div class="tradingview-widget-copyright"><a href="https://kr.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">트레이딩뷰에서 모든 시장 추적</span></a></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+        {
+        "autosize": true,
+        "symbol": "FX_IDC:USDCNY",
+        "interval": "D",
+        "timezone": "Etc/UTC",
+        "theme": "light",
+        "style": "1",
+        "locale": "kr",
+        "enable_publishing": false,
+        "allow_symbol_change": true,
+        "support_host": "https://www.tradingview.com"
+      }
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </div>
+
+    <!-- IONICONS -->
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <!-- JS -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
